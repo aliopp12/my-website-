@@ -1,0 +1,40 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Magic Social Share Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+<div class="menu">
+  <div class="toggle">
+    <ion-icon name="share-social"></ion-icon>
+  </div>
+  <li style="--i:0; --clr:#1877f2">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+  </li>
+  <li style="--i:1; --clr:#25D366">
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+  </li>
+  <li style="--i:2; --clr:#E1306C">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </li>
+  <li style="--i:3; --clr:#ff0000">
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </li>
+</div>
+
+<script>
+  const menu = document.querySelector('.menu');
+  const toggle = document.querySelector('.toggle');
+  toggle.onclick = () => {
+    menu.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
